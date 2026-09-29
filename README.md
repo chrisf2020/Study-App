@@ -1,1 +1,1 @@
-# Scout-Website
+# Study-App
