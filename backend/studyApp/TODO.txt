@@ -1,0 +1,17 @@
+finished:
+    model - User
+    userControler ?
+
+
+TO DO:
+    user DTO
+
+    user service
+    user repo
+
+    finish settingup spring boot security
+    getting db on github
+
+
+    maybe make file
+
