@@ -1,0 +1,83 @@
+import { StyleSheet } from 'react-native';
+import menuBarStyles from './MenuBar.styles';
+import projectStyles from './ProjectScreen.styles';
+
+export default StyleSheet.create({
+  screen: menuBarStyles.screen,
+  topBar: menuBarStyles.topBar,
+  topBarTitle: menuBarStyles.topBarTitle,
+  topBarAction: menuBarStyles.topBarAction,
+  topBarIcon: menuBarStyles.topBarIcon,
+  topBarAvatar: menuBarStyles.topBarAvatar,
+  scrollArea: projectStyles.scrollArea,
+  content: {
+    alignSelf: 'center',
+    width: '100%',
+    maxWidth: 408,
+    paddingHorizontal: 19,
+    paddingBottom: 24,
+    gap: 16,
+  },
+  searchRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  searchInput: {
+    flex: 1,
+    minHeight: 34,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 16,
+    backgroundColor: '#F9E6A8',
+    color: '#1D1B20',
+    fontSize: 16,
+    fontWeight: '600',
+    lineHeight: 24,
+    letterSpacing: 0.15,
+    textAlign: 'center',
+  },
+  searchPlaceholder: {
+    color: '#ABABAB',
+  },
+  searchButton: {
+    ...menuBarStyles.topBarAction,
+    width: 44,
+    height: 44,
+  },
+  searchIcon: menuBarStyles.topBarIcon,
+  messageList: {
+    alignSelf: 'center',
+    width: '100%',
+    maxWidth: 360,
+    minHeight: 480,
+    paddingTop: 44,
+    paddingBottom: 16,
+    gap: 29,
+    backgroundColor: '#F5F5F5',
+    borderRadius: 12,
+  },
+  messageCard: {
+    ...projectStyles.projectCard,
+    minHeight: 72,
+  },
+  messageCardContent: projectStyles.projectCardContent,
+  messageAvatar: projectStyles.projectAvatar,
+  messageAvatarInitial: projectStyles.projectAvatarInitial,
+  messageName: {
+    ...projectStyles.projectTitle,
+    flex: 1,
+  },
+  messageMedia: projectStyles.projectMedia,
+  messageMediaWide: {
+    width: '50%',
+    maxWidth: 182,
+  },
+  honeycombImage: projectStyles.honeycombImage,
+  bottomBar: menuBarStyles.bottomBar,
+  tab: menuBarStyles.tab,
+  tabIndicator: menuBarStyles.tabIndicator,
+  tabIndicatorActive: menuBarStyles.tabIndicatorActive,
+  tabIcon: menuBarStyles.tabIcon,
+  tabLabel: menuBarStyles.tabLabel,
+});
